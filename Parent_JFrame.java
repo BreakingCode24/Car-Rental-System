@@ -157,7 +157,7 @@ public class Parent_JFrame {
                     new Customer_Remove().frame.setVisible(true);
                 }
                 case "About" -> {
-                    JOptionPane.showMessageDialog(null, "THIS PROGRAM IS WRITTEN BY VINYAS | SHREESHA | SRIJAN  !");
+                    JOptionPane.showMessageDialog(null, "THIS CAR RENTAL SYSTEM JAVA PROJECT IS DEVELOPED BY VINYAS !");
                 }
 
             }
