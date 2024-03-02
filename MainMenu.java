@@ -49,7 +49,7 @@ public class MainMenu implements ActionListener {
         CarsButton.setFont(new Font("Tahoma", 1, 14));
         BookingButton.setFont(new Font("Tahoma", 1, 14));
 
-        Image_Label.setIcon((new ImageIcon("C:\\Users\\vinya\\Downloads\\MainMenuImage.jpeg")));
+        Image_Label.setIcon((new ImageIcon("MainMenuImage.jpeg")));
 
         CustomerButton.setBackground(new Color(240,240,240));
         CarsButton.setBackground(new Color(240,240,240));
