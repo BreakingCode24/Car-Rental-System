@@ -89,7 +89,7 @@ public class Booking implements Serializable {
         }
         this.ReturnTime = 0;
         booking.add(this);
-        File file = new File("C:\\Users\\vinya\\Downloads\\Booking.ser");
+        File file = new File("Booking.ser");
         if (!file.exists()) {
             try {
                 file.createNewFile();
@@ -129,7 +129,7 @@ public class Booking implements Serializable {
 
         ObjectOutputStream outputStream = null;
         try {
-            outputStream = new ObjectOutputStream(new FileOutputStream("C:\\Users\\vinya\\Downloads\\Booking.ser"));
+            outputStream = new ObjectOutputStream(new FileOutputStream("Booking.ser"));
             for (int i = 0; i < booking.size(); i++) {
                 outputStream.writeObject(booking.get(i));
             }
@@ -163,7 +163,7 @@ public class Booking implements Serializable {
         // code for writing new Booking record 
         ObjectOutputStream outputStream = null;
         try {
-            outputStream = new ObjectOutputStream(new FileOutputStream("C:\\Users\\vinya\\Downloads\\Booking.ser"));
+            outputStream = new ObjectOutputStream(new FileOutputStream("Booking.ser"));
             for (int i = 0; i < booking.size() - 1; i++) {
                 outputStream.writeObject(booking.get(i));
             }
@@ -201,7 +201,7 @@ public class Booking implements Serializable {
         ObjectInputStream inputStream = null;
         try {
 // open file for reading
-            inputStream = new ObjectInputStream(new FileInputStream("C:\\Users\\vinya\\Downloads\\Booking.ser"));
+            inputStream = new ObjectInputStream(new FileInputStream("Booking.ser"));
             boolean EOF = false;
 // Keep reading file until file ends
             while (!EOF) {
@@ -236,7 +236,7 @@ public class Booking implements Serializable {
         ArrayList<Booking> bookingList = new ArrayList<>(0);
         ObjectInputStream inputStream = null;
         try {
-            inputStream = new ObjectInputStream(new FileInputStream("C:\\Users\\vinya\\Downloads\\Booking.ser"));
+            inputStream = new ObjectInputStream(new FileInputStream("Booking.ser"));
             boolean EOF = false;
             while (!EOF) {
                 try {
@@ -271,7 +271,7 @@ public class Booking implements Serializable {
         ObjectInputStream inputStream = null;
         try {
 // open file for reading
-            inputStream = new ObjectInputStream(new FileInputStream("C:\\Users\\vinya\\Downloads\\Booking.ser"));
+            inputStream = new ObjectInputStream(new FileInputStream("Booking.ser"));
             boolean EOF = false;
 // Keep reading file until file ends
             while (!EOF) {
