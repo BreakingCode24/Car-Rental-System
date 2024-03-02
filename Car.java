@@ -146,7 +146,7 @@ public class Car implements Serializable {
         }
         ObjectOutputStream outputStream = null;
         try {
-            outputStream = new ObjectOutputStream(new FileOutputStream("Car.ser"));
+            outputStream = new ObjectOutputStream(new FileOutputStream(file));
             for (int i = 0; i < car.size(); i++) {
                 outputStream.writeObject(car.get(i));
             }
