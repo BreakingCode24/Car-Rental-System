@@ -23,7 +23,7 @@ public class Runner {
 
     public Runner() {
         
-        icon = new ImageIcon("C:\\Users\\vinya\\Downloads\\WelcomeImage.jpg");
+        icon = new ImageIcon("WelcomeImage.jpg");
         L1 = new JLabel(icon);
         FRAME.setUndecorated(true);
         FRAME.setSize(new Dimension(1000, 534));
