@@ -72,7 +72,7 @@ public class Login {
         
 
         Image_jLabel.setMinimumSize(new Dimension(1366, 730));
-        Image_jLabel.setIcon(new ImageIcon("C:\\Users\\vinya\\Downloads\\LoginImage.jpg"));
+        Image_jLabel.setIcon(new ImageIcon("LoginImage.jpg"));
 
         UN_TextField.setPreferredSize(new Dimension(200, 20));
         Password_Field.setPreferredSize(new Dimension(200, 20));
