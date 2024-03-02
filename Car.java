@@ -136,7 +136,7 @@ public class Car implements Serializable {
             this.ID = car.get(car.size() - 1).ID + 1; // Auto ID...
         }
         car.add(this);
-        File file = new File("C:\\Users\\vinya\\Downloads\\Car.ser");
+        File file = new File("Car.ser");
         if (!file.exists()) {
             try {
                 file.createNewFile();
@@ -146,7 +146,7 @@ public class Car implements Serializable {
         }
         ObjectOutputStream outputStream = null;
         try {
-            outputStream = new ObjectOutputStream(new FileOutputStream(file));
+            outputStream = new ObjectOutputStream(new FileOutputStream("Car.ser"));
             for (int i = 0; i < car.size(); i++) {
                 outputStream.writeObject(car.get(i));
             }
@@ -178,7 +178,7 @@ public class Car implements Serializable {
         // code for writing new Car record 
         ObjectOutputStream outputStream = null;
         try {
-            outputStream = new ObjectOutputStream(new FileOutputStream("C:\\Users\\vinya\\Downloads\\Car.ser"));
+            outputStream = new ObjectOutputStream(new FileOutputStream("Car.ser"));
             for (int i = 0; i < car.size(); i++) {
                 outputStream.writeObject(car.get(i));
             }
@@ -208,7 +208,7 @@ public class Car implements Serializable {
         // code for writing new Car record 
         ObjectOutputStream outputStream = null;
         try {
-            outputStream = new ObjectOutputStream(new FileOutputStream("C:\\Users\\vinya\\Downloads\\Car.ser"));
+            outputStream = new ObjectOutputStream(new FileOutputStream("Car.ser"));
             for (int i = 0; i < car.size(); i++) {
                 outputStream.writeObject(car.get(i));
             }
@@ -263,7 +263,7 @@ public class Car implements Serializable {
         ObjectInputStream inputStream = null;
         try {
 // open file for reading
-            inputStream = new ObjectInputStream(new FileInputStream("C:\\Users\\vinya\\Downloads\\Car.ser"));
+            inputStream = new ObjectInputStream(new FileInputStream("Car.ser"));
             boolean EOF = false;
 // Keep reading file until file ends
             while (!EOF) {
