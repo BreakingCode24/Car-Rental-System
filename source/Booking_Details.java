@@ -148,7 +148,7 @@ public class Booking_Details {
             switch (e.getActionCommand()) {
 
                 case "Back" -> {
-                    Parent_JFrame.getMainFrame().setTitle("Rent-A-Car Management System [REBORN]");
+                    Parent_JFrame.getMainFrame().setTitle("CAR RENTAL SYSTEM");
                     MainMenu mm = new MainMenu();
                     Parent_JFrame.getMainFrame().getContentPane().removeAll();
                     Parent_JFrame.getMainFrame().add(mm.getMainPanel());
