@@ -53,7 +53,7 @@ public class Customer extends Person implements Serializable {
             this.ID = customers.get((customers.size() - 1)).ID + 1; // Auto ID...
         }
         customers.add(this);
-        File file = new File("C:\\Users\\vinya\\Downloads\\Customer.ser");
+        File file = new File("Customer.ser");
         if (!file.exists()) {
             try {
                 file.createNewFile();
@@ -96,7 +96,7 @@ public class Customer extends Person implements Serializable {
         // code for writing new Customer record 
         ObjectOutputStream outputStream = null;
         try {
-            outputStream = new ObjectOutputStream(new FileOutputStream("C:\\Users\\vinya\\Downloads\\Customer.ser"));
+            outputStream = new ObjectOutputStream(new FileOutputStream("Customer.ser"));
             for (int i = 0; i < customers.size(); i++) {
                 outputStream.writeObject(customers.get(i));
             }
@@ -131,7 +131,7 @@ public class Customer extends Person implements Serializable {
         // code for writing new Customer record 
         ObjectOutputStream outputStream = null;
         try {
-            outputStream = new ObjectOutputStream(new FileOutputStream("C:\\Users\\vinya\\Downloads\\Customer.ser"));
+            outputStream = new ObjectOutputStream(new FileOutputStream("Customer.ser"));
             for (int i = 0; i < customers.size(); i++) {
                 outputStream.writeObject(customers.get(i));
             }
@@ -179,7 +179,7 @@ public class Customer extends Person implements Serializable {
         ObjectInputStream inputStream = null;
         try {
 // open file for reading
-            inputStream = new ObjectInputStream(new FileInputStream("C:\\Users\\vinya\\Downloads\\Customer.ser"));
+            inputStream = new ObjectInputStream(new FileInputStream("Customer.ser"));
             boolean EOF = false;
 // Keep reading file until file ends
             while (!EOF) {
